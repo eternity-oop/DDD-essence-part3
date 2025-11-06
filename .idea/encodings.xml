@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/01-syndicated-loan/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/01-syndicated-loan/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/02-refinement/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/02-refinement/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/03-breakthrough/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/03-breakthrough/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/04-paint/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/04-paint/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05-intention-revealing-interface/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05-intention-revealing-interface/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/06-side-effect-free-function/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/06-side-effect-free-function/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/07-assertion/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/07-assertion/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08-loan-refactoring/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08-loan-refactoring/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
