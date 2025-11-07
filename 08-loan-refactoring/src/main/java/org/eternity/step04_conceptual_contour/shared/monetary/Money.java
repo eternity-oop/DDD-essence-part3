@@ -1,7 +1,7 @@
-package org.eternity.shared.monetary;
+package org.eternity.step04_conceptual_contour.shared.monetary;
 
 import lombok.ToString;
-import org.eternity.shared.domain.ValueObject;
+import org.eternity.step04_conceptual_contour.shared.domain.ValueObject;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;

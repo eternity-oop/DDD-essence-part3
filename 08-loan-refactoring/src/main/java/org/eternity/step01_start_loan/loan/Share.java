@@ -1,8 +1,10 @@
-package org.eternity.loan;
+package org.eternity.step01_start_loan.loan;
 
-import org.eternity.shared.domain.ValueObject;
-import org.eternity.shared.monetary.Money;
+import lombok.ToString;
+import org.eternity.step01_start_loan.shared.domain.ValueObject;
+import org.eternity.step01_start_loan.shared.monetary.Money;
 
+@ToString
 public class Share extends ValueObject<Share> {
     private Company company;
     private Money amount;

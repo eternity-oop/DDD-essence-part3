@@ -1,7 +1,7 @@
-package org.eternity.shared.monetary;
+package org.eternity.step01_start_loan.shared.monetary;
 
 import lombok.ToString;
-import org.eternity.shared.domain.ValueObject;
+import org.eternity.step01_start_loan.shared.domain.ValueObject;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;

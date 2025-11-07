@@ -1,6 +1,6 @@
-package org.eternity.loan;
+package org.eternity.step04_conceptual_contour.loan;
 
-import org.eternity.shared.domain.DomainEntity;
+import org.eternity.step04_conceptual_contour.shared.domain.DomainEntity;
 
 public class Company extends DomainEntity<Company, Long> {
     private Long id;

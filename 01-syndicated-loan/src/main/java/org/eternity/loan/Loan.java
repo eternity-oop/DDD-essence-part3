@@ -2,7 +2,6 @@ package org.eternity.loan;
 
 import org.eternity.shared.domain.DomainEntity;
 import org.eternity.shared.monetary.Money;
-import org.w3c.dom.Entity;
 
 import java.util.HashSet;
 import java.util.Set;

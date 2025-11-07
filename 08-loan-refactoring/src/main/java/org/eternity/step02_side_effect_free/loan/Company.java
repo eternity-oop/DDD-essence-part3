@@ -1,6 +1,6 @@
-package org.eternity.loan;
+package org.eternity.step02_side_effect_free.loan;
 
-import org.eternity.shared.domain.DomainEntity;
+import org.eternity.step02_side_effect_free.shared.domain.DomainEntity;
 
 public class Company extends DomainEntity<Company, Long> {
     private Long id;

@@ -1,7 +1,7 @@
-package org.eternity.loan;
+package org.eternity.step02_side_effect_free.loan;
 
-import org.eternity.shared.domain.AggregateRoot;
-import org.eternity.shared.monetary.Money;
+import org.eternity.step02_side_effect_free.shared.domain.AggregateRoot;
+import org.eternity.step02_side_effect_free.shared.monetary.Money;
 
 import java.util.*;
 import java.util.function.Function;
@@ -44,6 +44,14 @@ public class Facility extends AggregateRoot<Facility, Long> {
         }
 
         loan.increase(Arrays.stream(shares).collect(Collectors.toMap(Share::company, Function.identity())));
+    }
+
+    public Set<Share> estimateRepayments(Money amount) {
+        return loan.calculateRepayments(amount);
+    }
+
+    public void repay(Money amount) {
+        loan.applyRepayments(loan.calculateRepayments(amount));
     }
 
     private Money limit() {

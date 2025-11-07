@@ -18,10 +18,4 @@ public class StockPaint implements Paint {
     public PigmentColor getColor() {
         return color;
     }
-
-    public void mixin(Paint other) {
-        volume = volume + other.getVolume();
-        double ratio = other.getVolume() / volume;
-        color = color.mixedWith(other.getColor(), ratio);
-    }
 }

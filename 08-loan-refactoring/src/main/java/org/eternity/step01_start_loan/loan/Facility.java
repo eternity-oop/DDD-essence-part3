@@ -1,7 +1,7 @@
-package org.eternity.loan;
+package org.eternity.step01_start_loan.loan;
 
-import org.eternity.shared.domain.AggregateRoot;
-import org.eternity.shared.monetary.Money;
+import org.eternity.step01_start_loan.shared.domain.AggregateRoot;
+import org.eternity.step01_start_loan.shared.monetary.Money;
 
 import java.util.*;
 import java.util.function.Function;
@@ -44,6 +44,10 @@ public class Facility extends AggregateRoot<Facility, Long> {
         }
 
         loan.increase(Arrays.stream(shares).collect(Collectors.toMap(Share::company, Function.identity())));
+    }
+
+    public Set<Share> repay(Money amount) {
+        return loan.distributePrincipalPayment(amount);
     }
 
     private Money limit() {

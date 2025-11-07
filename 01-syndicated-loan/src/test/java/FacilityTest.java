@@ -4,19 +4,16 @@ import org.eternity.loan.Investment;
 import org.eternity.shared.monetary.Money;
 import org.junit.Test;
 
-import java.util.HashSet;
 import java.util.Set;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class FacilityTest {
     @Test
     public void 회사별_퍼실러티_대출_금액() {
-        Company companyA = new Company("A");
-        Company companyB = new Company("B");
-        Company companyC = new Company("C");
+        Company companyA = new Company(1L, "A");
+        Company companyB = new Company(2L, "B");
+        Company companyC = new Company(3L, "C");
 
         // 대출 한도와 지분 설정
         Facility facility = Facility.crate(

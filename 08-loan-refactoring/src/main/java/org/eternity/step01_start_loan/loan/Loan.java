@@ -1,9 +1,10 @@
-package org.eternity.loan;
+package org.eternity.step01_start_loan.loan;
 
-import org.eternity.shared.domain.DomainEntity;
-import org.eternity.shared.monetary.Money;
+import org.eternity.step01_start_loan.shared.domain.DomainEntity;
+import org.eternity.step01_start_loan.shared.monetary.Money;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
@@ -27,6 +28,18 @@ public class Loan extends DomainEntity<Loan, Long> {
         for(var owner : sharesToAdd.keySet()) {
             shares.put(owner, shares.get(owner).plus(sharesToAdd.get(owner)));
         }
+    }
+
+    public Set<Share> distributePrincipalPayment(Money amount) {
+        Set<Share> result = new HashSet<>();
+
+        for(var owner : shares.keySet()) {
+            Share paymentShare = shares.get(owner).prorate(amount, amount());
+            result.add(paymentShare);
+            shares.put(owner, shares.get(owner).minus(paymentShare));
+        }
+
+        return result;
     }
 
     public Money investAmountOf(Company company) {

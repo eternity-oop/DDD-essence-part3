@@ -11,9 +11,9 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class FacilityTest {
     @Test
     public void 회사별_퍼실러티_대출_금액_확인() {
-        Company companyA = new Company("A");
-        Company companyB = new Company("B");
-        Company companyC = new Company("C");
+        Company companyA = new Company(1L, "A");
+        Company companyB = new Company(2L, "B");
+        Company companyC = new Company(3L, "C");
 
         Facility facility = Facility.crate(
                 Money.won(1000),
@@ -32,9 +32,9 @@ public class FacilityTest {
 
     @Test
     public void 회사별_대출_금액_조정() {
-        Company companyA = new Company("A");
-        Company companyB = new Company("B");
-        Company companyC = new Company("C");
+        Company companyA = new Company(1L, "A");
+        Company companyB = new Company(2L, "B");
+        Company companyC = new Company(3L, "C");
 
         // 대출 한도와 지분 설정
         Facility facility = Facility.crate(
